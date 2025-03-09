@@ -22,6 +22,7 @@ module "lambda_api" {
   environment          = "prd"
   api_stage            = "prod"
   aws_account_id       = var.account_id
+  account_id           = var.account_id
   user_pool_id         = module.cognito.user_pool_id
   user_pool_client_id  = module.cognito.user_pool_client_id
 }
