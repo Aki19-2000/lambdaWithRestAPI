@@ -21,7 +21,7 @@ module "lambda_api" {
   image_uri            = var.image_uri
   environment          = "prd"
   api_stage            = "prod"
-  aws_account_id           = var.aws_account_id
+  aws_account_id       = var.account_id
   user_pool_id         = module.cognito.user_pool_id
   user_pool_client_id  = module.cognito.user_pool_client_id
 }
